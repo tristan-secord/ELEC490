@@ -19,7 +19,8 @@ public class StartFragment extends Fragment{
         startButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent StartWorkout = new Intent(getActivity(), monitorVitalSigns.class);
-                startActivity(StartWorkout);
+                if (StartWorkout != null)
+                    startActivity(StartWorkout);
             }
         });
 
