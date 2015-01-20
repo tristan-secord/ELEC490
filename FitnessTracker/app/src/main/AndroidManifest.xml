@@ -29,8 +29,13 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< Updated upstream
             android:name=".Profile"
             android:label="@string/title_activity_profile" >
+=======
+            android:name=".monitorVitalSigns"
+            android:label="@string/title_activity_monitor_vital_signs" >
+>>>>>>> Stashed changes
         </activity>
     </application>
 
