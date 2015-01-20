@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tristansecord.fitnesstracker" >
+    package="com.example.elec490.fitnesstracker" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
 
     <application
         android:allowBackup="true"
@@ -16,10 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".EditGoals"
-            android:label="@string/title_activity_edit_goals" >
-        </activity>
+        <activity android:name=".monitorVitalSigns"
+            android:label="@string/title_activity_monitor_vital_signs"> </activity>
     </application>
 
 </manifest>
