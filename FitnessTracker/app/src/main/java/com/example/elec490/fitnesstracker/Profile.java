@@ -4,6 +4,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+
 
 
 public class Profile extends ActionBarActivity {
@@ -12,6 +14,16 @@ public class Profile extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+        // create 4 buttons for each profile along with thumbnail pic
+        // onclick listener?
+        // check if empty (if not empty then head to what is available now) / load profile
+        // call function
+        Button Gaston = (Button) findViewById(R.id.Gaston);
+        Button Phil = (Button) findViewById(R.id.Phil);
+        Button Flounder = (Button) findViewById(R.id.Flounder);
+        Button Coyote = (Button) findViewById(R.id.Coyote);// button naming 
+
     }
 
 
@@ -37,3 +49,8 @@ public class Profile extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
+// Promt ask user to pick from 1 of four different profiles
+// if profile hasn't been initiated then do this otherwise get saved data
+// if user selects new profile ask user for Height, Weight, sex, and get heart rate data
+// save user information
