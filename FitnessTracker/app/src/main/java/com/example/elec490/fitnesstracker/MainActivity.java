@@ -17,6 +17,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import com.example.elec490.fitnesstracker.R;
+
 
 
 public class MainActivity extends ActionBarActivity {

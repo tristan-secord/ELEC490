@@ -9,34 +9,34 @@
     <ImageButton
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:id="@+id/Gaston"
-        android:background="@drawable/Gaston"
+        android:id="@+id/gaston"
+        android:background="@drawable/gaston"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <ImageButton
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:id="@+id/Coyote"
-        android:background="@drawable/Coyote"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/Flounder"
-        android:layout_alignStart="@+id/Flounder" />
-
-    <ImageButton
-        android:layout_width="150dp"
-        android:layout_height="200dp"
-        android:id="@+id/Flounder"
-        android:background="@drawable/Flounder"
-        android:layout_alignTop="@+id/Phil"
+        android:id="@+id/coyote"
+        android:background="@drawable/coyote"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:id="@+id/Phil"
-        android:background="@drawable/Phil"
+        android:id="@+id/flounder"
+        android:background="@drawable/flounder"
+        android:layout_alignTop="@+id/gaston"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:id="@+id/phil"
+        android:background="@drawable/phil"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
