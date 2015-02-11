@@ -6,13 +6,21 @@
         android:minSdkVersion="10"
         android:targetSdkVersion="10" />
 
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".Profile"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,8 +28,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".monitorVitalSigns"
-            android:label="@string/title_activity_monitor_vital_signs"> </activity>
+        <activity
+            android:name=".monitorVitalSigns"
+            android:label="@string/title_activity_monitor_vital_signs" >
+        </activity>
+        <activity
+            android:name=".Gaston"
+            android:label="@string/title_activity_gaston" >
+        </activity>
+        <activity
+            android:name="com.example.tristansecord.fitnesstracker.founder"
+            android:label="@string/title_activity_founder" >
+        </activity>
+        <activity
+            android:name="com.example.tristansecord.fitnesstracker.phil"
+            android:label="@string/title_activity_phil" >
+        </activity>
+        <activity
+            android:name="com.example.tristansecord.fitnesstracker.coyote"
+            android:label="@string/title_activity_coyote" >
+        </activity>
+        <activity
+            android:name=".phil2"
+            android:label="@string/title_activity_phil2" >
+        </activity>
+        <activity
+            android:name=".Phil"
+            android:label="@string/title_activity_phil" >
+        </activity>
+        <activity
+            android:name=".Coyote"
+            android:label="@string/title_activity_coyote" >
+        </activity>
+        <activity
+            android:name=".Flounder"
+            android:label="@string/title_activity_flounder" >
+        </activity>
     </application>
 
 </manifest>

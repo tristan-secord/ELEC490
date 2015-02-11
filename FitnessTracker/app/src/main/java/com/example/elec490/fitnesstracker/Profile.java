@@ -1,5 +1,6 @@
 package com.example.elec490.fitnesstracker;
 
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -7,10 +8,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 
+public class Profile extends ActionBarActivity {
 
-public class Profile extends ActionBarActivity implements DialogInterface.OnClickListener {
+      //  implements DialogInterface.OnClickListener
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,29 +24,26 @@ public class Profile extends ActionBarActivity implements DialogInterface.OnClic
         // onclick listener?
         // check if empty (if not empty then head to what is available now) / load profile
         // call function
-       Button Gaston = (Button) findViewById(R.id.gaston);
-       Button Phil = (Button) findViewById(R.id.phil);
-      Button Flounder = (Button) findViewById(R.id.flounder);
-       Button Coyote = (Button) findViewById(R.id.coyote);// button naming
+       //Button Gaston = (Button) findViewById(R.id.gaston);
+      // Button Phil = (Button) findViewById(R.id.phil);
+     // Button Flounder = (Button) findViewById(R.id.flounder);
+    //   Button Coyote = (Button) findViewById(R.id.coyote);// button naming
+//
+     //Gaston.setOnClickListener( new View.OnClickListener(){
+        // @Override
+         //public void onClick(View view) {
+          //   this.function();
+     }
 
-     /* Gaston.setOnClickListener(function);
-    }
 
-public void function{
+//private void function() {
 
-        int age1;
-        boolean gender;
-        int weight1;
-        int height1;
-        int RestHeartRate1;
 
-        if( (age1!=0)&&(RestHeartRate1!=0)){
-            // call main activity page and update variables into class
+  //  }
+//}
+   // }
 
-        }
-*/
-
-    }
+  //  }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
