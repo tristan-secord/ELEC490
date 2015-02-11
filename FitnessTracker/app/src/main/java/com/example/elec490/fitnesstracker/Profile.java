@@ -2,6 +2,7 @@ package com.example.elec490.fitnesstracker;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 
 public class Profile extends ActionBarActivity {
@@ -24,26 +26,42 @@ public class Profile extends ActionBarActivity {
         // onclick listener?
         // check if empty (if not empty then head to what is available now) / load profile
         // call function
-       //Button Gaston = (Button) findViewById(R.id.gaston);
-      // Button Phil = (Button) findViewById(R.id.phil);
-     // Button Flounder = (Button) findViewById(R.id.flounder);
-    //   Button Coyote = (Button) findViewById(R.id.coyote);// button naming
+        ImageButton Gaston = (ImageButton) findViewById(R.id.gaston);
+        ImageButton Phil = (ImageButton) findViewById(R.id.phil);
+        ImageButton Flounder = (ImageButton) findViewById(R.id.flounder);
+        ImageButton Coyote = (ImageButton) findViewById(R.id.coyote);// button naming
 //
-     //Gaston.setOnClickListener( new View.OnClickListener(){
-        // @Override
-         //public void onClick(View view) {
-          //   this.function();
-     }
+        Gaston.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View r) {
+                Intent gaston = new Intent(getApplicationContext(), com.example.elec490.fitnesstracker.Gaston.class);
+                startActivity(gaston);
+            }
 
+        });
+        Phil.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View p) {
+                Intent phil = new Intent(getApplicationContext(), com.example.elec490.fitnesstracker.Phil.class);
+                startActivity(phil);
+            }
 
-//private void function() {
+        });
+        Flounder.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View f) {
+                Intent flounder = new Intent(getApplicationContext(), com.example.elec490.fitnesstracker.Flounder.class);
+                startActivity(flounder);
+            }
 
+        });
 
-  //  }
-//}
-   // }
+        Coyote.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View o) {
+                Intent coyote = new Intent(getApplicationContext(), com.example.elec490.fitnesstracker.Coyote.class);
+                startActivity(coyote);
+            }
 
-  //  }
+        });
+
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

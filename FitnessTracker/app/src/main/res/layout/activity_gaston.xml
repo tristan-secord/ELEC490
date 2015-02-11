@@ -129,6 +129,7 @@
     <ImageButton
         android:layout_width="80dp"
         android:layout_height="50dp"
+        android:id="@+id/back"
         android:background="@drawable/backbutton"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
@@ -137,8 +138,9 @@
     <ImageButton
         android:layout_width="100dp"
         android:layout_height="75dp"
+        android:id="@+id/enter"
         android:background="@drawable/enterbutton"
-        android:layout_below="@+id/checkBox2"
+        android:layout_alignBottom="@+id/back"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

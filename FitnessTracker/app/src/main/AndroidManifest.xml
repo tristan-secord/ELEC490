@@ -6,13 +6,7 @@
         android:minSdkVersion="10"
         android:targetSdkVersion="10" />
 
-    <android:uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <android:uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
+
 
     <application
         android:allowBackup="true"
@@ -36,22 +30,8 @@
             android:name=".Gaston"
             android:label="@string/title_activity_gaston" >
         </activity>
-        <activity
-            android:name="com.example.tristansecord.fitnesstracker.founder"
-            android:label="@string/title_activity_founder" >
-        </activity>
-        <activity
-            android:name="com.example.tristansecord.fitnesstracker.phil"
-            android:label="@string/title_activity_phil" >
-        </activity>
-        <activity
-            android:name="com.example.tristansecord.fitnesstracker.coyote"
-            android:label="@string/title_activity_coyote" >
-        </activity>
-        <activity
-            android:name=".phil2"
-            android:label="@string/title_activity_phil2" >
-        </activity>
+
+
         <activity
             android:name=".Phil"
             android:label="@string/title_activity_phil" >
@@ -64,6 +44,11 @@
             android:name=".Flounder"
             android:label="@string/title_activity_flounder" >
         </activity>
+        <activity
+        android:name=".MainActivity">
+
+        </activity>
+
     </application>
 
 </manifest>

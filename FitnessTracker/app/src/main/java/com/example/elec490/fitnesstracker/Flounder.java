@@ -1,9 +1,12 @@
 package com.example.elec490.fitnesstracker;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 import com.example.elec490.fitnesstracker.R;
 
@@ -13,7 +16,26 @@ public class Flounder extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flounder);
+        ImageButton back = (ImageButton) findViewById(R.id.back);
+        ImageButton enter = (ImageButton) findViewById(R.id.enter);
+
+
+        back.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View b) {
+                Intent back = new Intent(getApplicationContext(), com.example.elec490.fitnesstracker.Profile.class);
+                startActivity(back);
+
+            }
+        });
+        enter.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View e) {
+                Intent enter = new Intent(getApplicationContext(), com.example.elec490.fitnesstracker.MainActivity.class);
+                startActivity(enter);
+
+            }
+        });
     }
+
 
 
     @Override
